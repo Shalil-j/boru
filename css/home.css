@@ -1,0 +1,76 @@
+
+/* MAIN */
+/* SIDEBAR */
+.sidebar{
+position: sticky;
+height: 100%;
+width: 20rem;
+z-index: 100;
+top: 7rem;
+margin-top: 7rem;
+
+}
+.menu-item img{
+    height: 2rem;
+}
+.menu-item h3{
+    transition:all 0.5 ease-in-out;
+    font-size: 1.3rem !important;
+}
+.menu-item h3:hover{
+color: #0E74BB;
+font-weight: 400 !important;
+}
+/* main container */
+.main-div{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+
+/*  */
+.main-container{
+    /* margin-left:20rem; */
+    margin-top: 3rem;
+    padding-top: 3rem;
+
+}
+.main-container .owl-stage-outer{
+    /* height:21rem !important; */
+}
+.header-banner{
+    background-color: #0E74BB;
+    height: 20rem;
+}
+.header-banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* category-div */
+.category-div{
+    height: 8rem;
+    width: 8rem;
+    background-color: aliceblue;
+}
+.category-div img{
+height: 4rem;
+object-fit: contain;
+}
+.category-div .owl-stage-outer{
+    height: 10rem !important;
+}
+/*  */
+.store-logo{
+    height: 5rem;
+    width: 5rem;
+    background-color: aliceblue;
+}
+.store-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.store-div{
+    width: 20rem;
+}

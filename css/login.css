@@ -1,0 +1,11 @@
+.login-div{
+    width: 100%;
+    height: 100vh;
+    /* background-color: antiquewhite; */
+}
+.login-mg{
+    height: 23rem;
+}
+.upload-photo{
+    font-size: 4rem;
+}
