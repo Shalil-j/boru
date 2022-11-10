@@ -4,7 +4,7 @@
 .sidebar{
 position: sticky;
 height: 100%;
-width: 20rem;
+/* width: 20rem; */
 z-index: 100;
 top: 7rem;
 margin-top: 7rem;
@@ -20,6 +20,11 @@ margin-top: 7rem;
 .menu-item h3:hover{
 color: #0E74BB;
 font-weight: 400 !important;
+}
+.google-playstore img{
+    height: 4rem;
+    width: 100%;
+    object-fit: contain;
 }
 /* main container */
 .main-div{
