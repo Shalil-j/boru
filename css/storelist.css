@@ -1,0 +1,21 @@
+.main-div{
+    margin-top: 9rem;
+}
+.store-logo{
+    height: 5rem;
+    width: 5rem;
+    background-color: aliceblue;
+}
+.store-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.store-div{
+    width: 20rem;
+}
+
+.single-store{
+    /* border: 0 !important; */
+    /* border-bottom: 1px solid rgb(205, 205, 205); */
+}

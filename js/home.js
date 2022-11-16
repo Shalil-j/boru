@@ -1,5 +1,5 @@
 $(document).ready(function() {
- 
+
 	$('.header').owlCarousel({
 		loop: true,
 		autoplay: true,
@@ -16,11 +16,9 @@ $(document).ready(function() {
 	});
     $('.category').owlCarousel({
 		loop: true,
-		autoplay: false,
-		autoplayTimeout: 5000,
-		autoplayHoverPause: true,
 		dots: false,
 		stagePadding: 0,
+		center:false,
 		responsiveBaseElement: 'body',
 		responsive: {
 			0: {
@@ -28,6 +26,9 @@ $(document).ready(function() {
 			},
             1000:{
                 items: 6,
+            },
+			1200:{
+                items: 8,
             }
 		},
 	});
@@ -38,13 +39,17 @@ $(document).ready(function() {
 		autoplayTimeout: 5000,
 		autoplayHoverPause: true,
 		dots: false,
+		nav:true,
 		stagePadding: 0,
 		responsiveBaseElement: 'body',
 		responsive: {
 			0: {
-				items: 4,
+				items: 1,
 			},
             1000:{
+                items: 2,
+            },
+			1200:{
                 items: 3,
             }
 		},
