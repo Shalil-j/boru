@@ -1,191 +1,476 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Goru</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!-- icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!-- custom css -->
-<link rel="stylesheet" href="./css/theme.css">
-<link rel="stylesheet" href="./css/storelist.css">
-<link rel="stylesheet" href="./css/navbar-footer.css">
-<!-- owl carosul -->
-<!-- owl carousel css link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<!-- owl carousel theme.css link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">  
-<!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/storelist.css" />
+    <link rel="stylesheet" href="./css/navbar-footer.css" />
+    <!-- owl carosul -->
+    <!-- owl carousel css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- owl carousel theme.css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <script>
+    $(".dropdown-toggle").dropdown();
+  </script>
   <body>
     <!-- navbar -->
-    <nav class="navbar bg-light  w-100 shadow-sm p-3">
-      <div class="navbar-brand">
-        <a href="index.html">
-          <img class="logo" src="./asserts/logo.png" alt="">
-        </a>
-      </div>
-    </nav> 
-<!-- navbar-->
-<!-- main section -->
-<div class="main-div row">
-
-<div class="col-3 sidebar border-end d-flex pt-4 d-none d-md-block">
-    <div class="menu px-5  w-100 position-relative">
-        
-            <a class="d-flex page-link menu-item align-items-center " href="">
-            <img src="./asserts/icons/online-shop.svg" alt="">
-            <h3 class="fs-4 ms-3 fw-light">Online Store</h3>
-        </a>
-        <a class="d-flex mt-5 page-link menu-item align-items-center " href="">
-            <img src="./asserts/icons/shopping-cart.svg" alt="">
-            <h3 class="fs-4 ms-3 fw-light">Orders</h3>
-        </a>
-        <a class="d-flex mt-5 page-link menu-item align-items-center " href="">
-            <img src="./asserts/icons/monthly-subscription-icon.svg" alt="">
-            <h3 class="fs-4 ms-3 fw-light">Subscription</h3>
-        </a>
-        <a class="d-flex mt-5 page-link menu-item align-items-center " href="">
-            <img src="./asserts/icons/profile.svg" alt="">
-            <h3 class="fs-4 ms-3 fw-light">Shubham</h3>
-        </a>
-
-
-
-        <div class="google-playstore text-center mt-5">
-            <p class="fw-semibold pt-5">Download Mobile App</p>
-            <img src="./asserts/playstore.png" alt="" class="img-fluid mt-3">
+    <nav class="navbar bg-white w-100 shadow-sm p-3">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <div class="d-none d-md-block">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo" src="./asserts/logo.png" alt="" />
+            </a>
+          </div>
+          <div>
+            <a class="page-link" href="">
+              <div class="d-flex align-items-center">
+                <img
+                  class="default-icon"
+                  src="./asserts/icons and vectors/location.svg"
+                  alt=""
+                />
+                <h5 class="ms-2">Home</h5>
+              </div>
+              <div>
+                <p class="text-xs text-secondary">Chembur, Mumbai ...</p>
+              </div>
+            </a>
+          </div>
         </div>
-    </div>
-</div>
-<!-- menu -->
-<!-- main container -->
-<div class="col-lg-9  main-container p-0 px-md-3">
+        <div class="col-5 d-none d-md-block">
+          <div class="input-group bg-light rounded-2">
+            <input
+              type="text"
+              class="form-control bg-transparent border-0"
+              placeholder="search"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+            <span
+              class="input-group-text bg-transparent border-0"
+              id="basic-addon1"
+              ><i class="bi bi-search"></i
+            ></span>
+          </div>
+        </div>
+        <div class="notification d-flex align-items-center">
+          <div class="ms-4 position-relative">
+            <img
+              class="default-icon"
+              src="./asserts/icons and vectors/Bell.svg"
+              alt=""
+            />
+            <div class="notify-badge rounded-circle"></div>
+          </div>
+        </div>
+      </div>
+      <!-- searchbar for mobile -->
+      <div class="w-100 mt-2 d-md-none">
+        <div class="input-group bg-light rounded-2">
+          <input
+            type="text"
+            class="form-control bg-transparent border-0"
+            placeholder="search"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+          <span
+            class="input-group-text bg-transparent border-0"
+            id="basic-addon1"
+            ><i class="bi bi-search"></i
+          ></span>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar-->
 
+    <!-- main section -->
+    <div class="main-div pb-md-5 row ">
+      <!-- menu -->
+      <div class="col-3 sidebar border-end  d-flex   p-0 d-none d-md-block ">
+        <div class="menu float-end  position-relative ">
+          <a class="d-flex page-link menu-item active  align-items-center" href="">
+            <img src="./asserts/icons and vectors/online stores.svg" alt="" />
+            <h3 class="fs-4 ms-3 fw-light">Online Store</h3>
+          </a>
+          <a class="d-flex mt-5 page-link menu-item   align-items-center" href="">
+            <img src="./asserts/icons and vectors/Order web gray.svg" alt="" />
+            <h3 class="fs-4 ms-3 fw-light">Orders</h3>
+          </a>
+          <a class="d-flex mt-5 page-link menu-item  align-items-center" href="">
+            <img src="./asserts/icons and vectors/Subscription web gray.svg" alt="" />
+            <h3 class="fs-4 ms-3 fw-light">Subscription</h3>
+          </a>
+          <a class="d-flex mt-5 page-link menu-item  align-items-center" href="">
+            <img src="./asserts/icons and vectors/WEb customer profile gray.svg" alt="" />
+            <h3 class="fs-4 ms-3 fw-light">Shubham</h3>
+          </a>
 
-<!-- storelist -->
-<div class="container mt-5">
-    <div class="row  g-md-4">
-      <!-- --- -->
-      <div class="col-12 col-lg-6">
-        <div class="px-3 p-lg-4 ">
-          <div class="row ">
-            <div class="col-4">
-              <div class="store-img">
-                <img class="rounded-4" src="https://en-media.thebetterindia.com/uploads/2021/02/Vaibhav-1.jpg" alt="">
+          <div class="google-playstore text-center mt-5">
+            <p class="fw-semibold pt-5">Download Mobile App</p>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.boru.vendor"
+              target="_blank"
+            >
+              <img src="./asserts/playstore.png" alt="" class="mt-3" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- menu -->
+
+      <!-- main container -->
+      <div class="col-12 col-md-9 main-container p-0 px-md-3">
+        <!-- stores -->
+        <div class="container mt-2 bg-white py-3">
+          <h1 class="mt-3 fs-4 fw-light">Your Favourite Store</h1>
+          <div class="fav-stores owl-carousel owl-theme">
+            <!--  -->
+            <div class="fav-store-div  text-cente  d-flex flex-column align-items-center">
+              <div class="fav-store-img d-flex justify-content-center align-items-center">
+                <img class="rounded-circle" src="https://economictimes.indiatimes.com/thumb/msid-67565687,width-1200,height-900,resizemode-4,imgsize-324407/amul-agencies.jpg?from=mdr" alt="">
+              </div>
+              <span class="d-inline-block text-truncate">Amul Dairy</span>
+            </div>
+            <!--  -->
+            <div class="fav-store-div  text-cente  d-flex flex-column align-items-center">
+              <div class="fav-store-img d-flex justify-content-center align-items-center">
+                <img class="rounded-circle" src="data:image/png;base64,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" alt="">
+              </div>
+              <span class="d-inline-block text-truncate">Reliance Fresh</span>
+            </div>
+            <!--  -->
+            <div class="fav-store-div  text-cente  d-flex flex-column align-items-center">
+              <div class="fav-store-img d-flex justify-content-center align-items-center">
+                <img class="rounded-circle" src="data:image/png;base64,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" alt="">
+              </div>
+              <span class="d-inline-block text-truncate">DMart</span>
+            </div>
+            <!--  -->
+            <div class="fav-store-div  text-cente  d-flex flex-column align-items-center">
+              <div class="fav-store-img d-flex justify-content-center align-items-center">
+                <img class="rounded-circle" src="data:image/png;base64,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" alt="">
+              </div>
+              <span class="d-inline-block text-truncate">JioMart</span>
+            </div>
+            <!--  -->
+            <div class="fav-store-div  text-cente  d-flex flex-column align-items-center">
+              <div class="fav-store-img d-flex justify-content-center align-items-center">
+                <img class="rounded-circle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAAwCAMAAAAcuhVsAAAA2FBMVEX///8BOXbzcCIAOHYAKG7y9vkAMHH///3zaxf7/v/yZQD++fXx8/byZwD6zLh6iagANHT84NX2lmmCj6v0divyWAAALXD3poL718bBxtX0hUvzag4AI2zO1eDxTAD+9O0AH2uOnLb3oXn4sJH96uAAK3b0gENXbZVlep7l6e87WIgADmWqtMcAAFsnSoD1jVslLGVQRGn4up9uS2GEUFn+bgCaUEnzdza0lZRLY4/egFUwPnFjSGUAGGd4TF0gQXuHSEt4NUGar8i/g3apVkG+YD7UZjTgaSwSfkynAAAFrElEQVRYhe2Yi3biNhCGZYxv2GCDE2wHVGPjxZhVTEsvKd1StvT2/m/U+WWRhSxJSJY25/R0DjHySJpvJI2kIYz9L/+YWOkbgfO74k24xXWnx6zp9F8HL+3OrHvnyrJ7WozLCw2407I7zSpb192TYn89bl9WJh5jNx1bLbHVaZ0W+5tAv6iYnju9WlnsGW5r9K2pXVJMLz3YSI9zW6PvhpflHoaY4tpKUByNRo3q+x/emaauekkJ5Jsuy1QMlPZAtVfeN0Pto1x7GeWQZbdl51E0nbW6d4M8yn/0w7pB+VLm9ZjKixBiasFaFsLS1LeygLZKOaRmTZ8yMB/ldnvqNb3r9Olr0FntGyzgrz7cvyZtbZjJUq2rAumCUhbmRGgLWZzoQ191cUrzSa7rMoutrhuuhfPUIoXi0u5jniP9UJbnJnEdR3KHoVRlFBDjRLlrEtdyDDLEx09yowE94obbwti/Qvz9pOmK67Rhch6MuewZDqlCqrK2ckW0iVvBKnkFLkswUV77aW7+iXt1z521PgSKa0quCctcQnQdhwFbBxgkqfhE09ukqTD0hhtIrn7ueD9xb+wWnSCHXJRFM3vBgjSGqU0qqaqIq4EGr17PvY77/WJG0f5zcDDP5hZTS5CN1oQYOTD2pMoIGk8yKM/m9uiSYtMDbgciT5Bf3iGuMixdba7pCZvvNW3CZTTpWwqvOSr1gL4cH1413DE9qqfXF+Gw6nQOxguuLcEfjaa5UQ5NADAqOkQ2TYQHcAV/ZYAZ8NCi4VZChdtz+3d2wM3Tokhv5HnWdeEVfZJhGxOqyXCSPJpFuOLU5INvIrIrqLfYv02Xjf4kd5pTo97BPEesiSsMGJd1jVldT2AZ0+ebcnnVSWIMPYwMm4zXGHpbznPNmm39kri6s464Kp43sHwrzcnl9U15RlW3tPrJrXzCq3AsuSYm+/xz42gfHXOxZwzuYKCwT7Ekw8uByuDwxMNDTL54/x5z247qyjclLQyCdVOxzyTZXI6LccyxfStBRrxbGazj5lTxBOAJXOOCXOPvL8aVB3OJYM1uUcRasrCutwieRHpRYwv5qDDO5rqI2f19xPb5/UE8ew4FWg1z2QbjCtSmTrCbxWYHrxDhMvSYvAcT/XkuJL1S9+99cq24+3ys9yvM+9hMbK24AgQxATKDP6XkLqDl2OjGo1zKNyD5cmTbgyiPKN+Y5Y1cNXmQrI8Gs273t7nv18GaMgmVUPglCgsTz3VJj62JZ01piT/XfHoGZ+VXzVfrk+b4bfT7O0qkkEWpBMoMAplG6fuiqpWJlnafd53kvkRGfwT6pfLJF4n952vAX85t2X9pLybrD7n2K2TU+jA0XyjtIy6zXinOi4W9jVjPNznf0nnGrBNYLj6/TE5ZO6VLV5ayyZOmBYzx5LgP3o0dq/hRX6N+YNY68O+J/4PI+uW+XKmfLEj9nOMAYhx1FUvCY+6CJQIpBF1hSUZdLMori3jF4l46WLFeHKNOeJkRGlnGZX3RtInTVa/P+jEd7tWOJ57YsWw395KEZxkykHCXMSE498OkCmliH3LLCulvYgiB5kVepFM2YDeum7NpAW7ilaykRLXERZCzyMpZXEzJs2ncI/foDqlKThMZ8qxKBOWQpUw4yTJLeEhM6sqq5IjrLCj/wwrQj0ePScP9yO3TeCNCDNjAwqr5DZcuQhpdDlJEa5C703TJVnSDVXOfkgEhuXTtzyV3TV2yKqQ1AJcdTz8fGplHK7AzQr6gebRWcTzo5atVGvXzYhnfkNWFWFRr+lvQ6vWmvUGx7Be9VWwN2LK/jJc0z4kvQuGHmc9FlviUyNL9Z2wd6iLWwq8W3oLx3VFsVp5nIKId5AhwKU3xC9RyC2a5LGW48B3DoWhxHE/Wk8qllED+SnVx7mC18H8igxoa9DEc6uBA50AnlYwsPB6k/3X5GyY7pX/7RsfLAAAAAElFTkSuQmCC" alt="">
+              </div>
+              <span class="d-inline-block text-truncate">Big Bazaar</span>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <!-- stores list -->
+        <div class="container bg-white mt-2 py-3">
+          <div class="row gap-md-4">
+          <!-- single store -->
+            <div class="col-12 col-md-6  single-store-div">
+              <div class="row justify-content-center p-md-2 single-store rounded-3">
+                <div class="col-4  d-flex justify-content-center align-items-center ">
+                  <div class="store-img">
+                    <img class="rounded-3" src="https://cdn.pixabay.com/photo/2020/04/17/19/48/city-5056657__340.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 py-4 py-md-0 store-desc  p-0">
+                  <div class="p-1 ">
+                    <div class="">
+                  <h1 class="fs-4 fw-semibold ">Shubam Dairy</h1>
+                  <p class="text-xs ">Chembur, Mumbai, Maharashtra, 400071</p>
+                </div>  
+                  <div class="mt-4 d-flex justify-content-between">
+                      <p class="fs-5">Milk</p>
+                      <div class="close-store-icon ">
+                      <img id="close-shop" class="d-none" src="./asserts/icons and vectors/closed.svg" alt="">
+                    </div>
+                    </div>
+                </div>
+              </div>
               </div>
             </div>
-            <div class="col-8 shote-desc  border-bottom">
-              <div class="d-flex flex-column justify-content-between h-100 w-100 align-items-baseline">
-                <div>
-              <p>Shubham Store Vashi</p>
-              <p>Vashi, Navi Mumbai, 400703</p>
+            <!-- single store -->
+            <div class="col-12 col-md-6  single-store-div">
+              <div class="row justify-content-center p-md-2 single-store rounded-3">
+                <div class="col-4  d-flex justify-content-center align-items-center ">
+                  <div class="store-img">
+                    <img class="rounded-3" src="https://cdn.pixabay.com/photo/2020/04/17/19/48/city-5056657__340.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 py-4 py-md-0 store-desc  p-0">
+                  <div class="p-1 ">
+                    <div class="">
+                  <h1 class="fs-4 fw-semibold ">Shubam Dairy</h1>
+                  <p class="text-xs ">Chembur, Mumbai, Maharashtra, 400071</p>
+                </div>  
+                  <div class="mt-4 d-flex justify-content-between">
+                      <p class="fs-5">Milk</p>
+                      <div class="close-store-icon ">
+                      <img  src="./asserts/icons and vectors/closed.svg" alt="">
+                    </div>
+                    </div>
+                </div>
+              </div>
+              </div>
             </div>
-            <div class="d-flex justify-content-between w-100 my-4">
-                <p>Newspaper</p>
-                <p class="alert alert-danger p-1 px-3">Close</p>
+            <!-- single store -->
+            <div class="col-12 col-md-6  single-store-div">
+              <div class="row justify-content-center p-md-2 single-store rounded-3">
+                <div class="col-4  d-flex justify-content-center align-items-center ">
+                  <div class="store-img">
+                    <img class="rounded-3" src="https://cdn.pixabay.com/photo/2020/04/17/19/48/city-5056657__340.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 py-4 py-md-0 store-desc  p-0">
+                  <div class="p-1 ">
+                    <div class="">
+                  <h1 class="fs-4 fw-semibold ">Shubam Dairy</h1>
+                  <p class="text-xs ">Chembur, Mumbai, Maharashtra, 400071</p>
+                </div>  
+                  <div class="mt-4 d-flex justify-content-between">
+                      <p class="fs-5">Milk</p>
+                      <div class="close-store-icon ">
+                      <img id="close-shop" class="" src="./asserts/icons and vectors/closed.svg" alt="">
+                    </div>
+                    </div>
+                </div>
+              </div>
+              </div>
             </div>
+            <!-- single store -->
+            <div class="col-12 col-md-6  single-store-div">
+              <div class="row justify-content-center p-md-2 single-store rounded-3">
+                <div class="col-4  d-flex justify-content-center align-items-center ">
+                  <div class="store-img">
+                    <img class="rounded-3" src="https://cdn.pixabay.com/photo/2020/04/17/19/48/city-5056657__340.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 py-4 py-md-0 store-desc  p-0">
+                  <div class="p-1 ">
+                    <div class="">
+                  <h1 class="fs-4 fw-semibold ">Shubam Dairy</h1>
+                  <p class="text-xs ">Chembur, Mumbai, Maharashtra, 400071</p>
+                </div>  
+                  <div class="mt-4 d-flex justify-content-between">
+                      <p class="fs-5">Milk</p>
+                      <div class="close-store-icon ">
+                      <img src="./asserts/icons and vectors/closed.svg" alt="">
+                    </div>
+                    </div>
+                </div>
+              </div>
+              </div>
             </div>
+            <!-- single store -->
+            <div class="col-12 col-md-6  single-store-div">
+              <div class="row justify-content-center p-md-2 single-store rounded-3">
+                <div class="col-4  d-flex justify-content-center align-items-center ">
+                  <div class="store-img">
+                    <img class="rounded-3" src="https://cdn.pixabay.com/photo/2020/04/17/19/48/city-5056657__340.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 py-4 py-md-0 store-desc  p-0">
+                  <div class="p-1 ">
+                    <div class="">
+                  <h1 class="fs-4 fw-semibold ">Shubam Dairy</h1>
+                  <p class="text-xs ">Chembur, Mumbai, Maharashtra, 400071</p>
+                </div>  
+                  <div class="mt-4 d-flex justify-content-between">
+                      <p class="fs-5">Milk</p>
+                      <div class="close-store-icon ">
+                      <img id="close-shop" class="d-none" src="./asserts/icons and vectors/closed.svg" alt="">
+                    </div>
+                    </div>
+                </div>
+              </div>
+              </div>
             </div>
+            <!-- single store -->
+            <div class="col-12 col-md-6  single-store-div">
+              <div class="row justify-content-center p-md-2 single-store rounded-3">
+                <div class="col-4  d-flex justify-content-center align-items-center ">
+                  <div class="store-img">
+                    <img class="rounded-3" src="https://cdn.pixabay.com/photo/2020/04/17/19/48/city-5056657__340.png" alt="">
+                  </div>
+                </div>
+                <div class="col-8 py-4 py-md-0 store-desc  p-0">
+                  <div class="p-1 ">
+                    <div class="">
+                  <h1 class="fs-4 fw-semibold ">Shubam Dairy</h1>
+                  <p class="text-xs ">Chembur, Mumbai, Maharashtra, 400071</p>
+                </div>  
+                  <div class="mt-4 d-flex justify-content-between">
+                      <p class="fs-5">Milk</p>
+                      <div class="close-store-icon ">
+                      <img  src="./asserts/icons and vectors/closed.svg" alt="">
+                    </div>
+                    </div>
+                </div>
+              </div>
+              </div>
             </div>
+            <!-- single store -->
+
+
+
+
+          </div>
         </div>
+
+
+
+
+
+
+
+
+
+                <!-- banner2 -->
+                <div class="container mt-2 bg-white py-3">
+                  <div class="banner owl-carousel owl-theme">
+                    <div class="header-banner">
+                      <img
+                        src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                        alt=""
+                      />
+                    </div>
+                    <div class="header-banner">
+                      <img
+                        src="https://images.unsplash.com/photo-1506617420156-8e4536971650?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1423&q=80"
+                        alt=""
+                      />
+                    </div>
+                    <div class="header-banner">
+                      <img
+                        src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- banner2 -->
       </div>
-      <!-- ---- -->
-      
+      <!-- main container -->
     </div>
-  </div>
+    <!-- wrapper div -->
 
-
-
-<!-- storelist -->
-
-
-
-<!-- banner2 -->
-<div class="container mt-5">
-    <div class="banner owl-carousel owl-theme">
-          
-        <div class="header-banner">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="">
+    <!-- footer -->
+    <div class="footer">
+      <div class="container py-md-4">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img
+              class="logo d-none d-md-block"
+              src="./asserts/logo.png"
+              alt=""
+            />
+            <p class="mt-3 fs-5">Order & Connect to your shop with BORU</p>
+            <p class="fs-4 fw-semibold">Fast, Transparently and Securely</p>
+            <p>Boru ❤️ Making Transparent & Direct Connections.</p>
+          </div>
+          <div class="col-3 d-none d-md-block">
+            <ul class="links">
+              <li><a class="page-link text-capitalize" href="">about us</a></li>
+              <li>
+                <a class="page-link text-capitalize" href="">contact us</a>
+              </li>
+              <li><a class="page-link text-capitalize" href="">careers</a></li>
+              <li>
+                <a class="page-link text-capitalize" href="">boru shop</a>
+              </li>
+              <li>
+                <a class="page-link text-capitalize" href=""
+                  >terms & conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 d-none d-md-block">
+            <ul class="links">
+              <li><a class="page-link text-capitalize" href="">Facbook</a></li>
+              <li>
+                <a class="page-link text-capitalize" href="">instagram</a>
+              </li>
+              <li><a class="page-link text-capitalize" href="">linkedin</a></li>
+              <li>
+                <a class="page-link text-capitalize" href="">report fraud</a>
+              </li>
+              <li>
+                <a class="page-link text-capitalize" href="">privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="border-top mt-4 pt-4 d-none d-md-block">
+            <p class="text-xs">
+              By continuing past this page, you agree to our Terms of Service,
+              Cookie Policy, Privacy Policy and Content Policies. All trademarks
+              are properties of their respective owners. 2021 © Boru™ Ltd. All
+              rights reserved.
+            </p>
+          </div>
         </div>
-        <div class="header-banner">
-            <img src="https://images.unsplash.com/photo-1506617420156-8e4536971650?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1423&q=80" alt="">
-        </div>
-        <div class="header-banner">
-            <img src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
-        </div>
-      </div>
-</div>
-<!-- banner2 -->
-
-</div>
-<!-- main container -->
-</div>
-<!-- wrapper div -->
-
-
-
-<!-- footer -->
-<div class="footer">
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-6">
-          <img class="logo" src="./asserts/logo.png" alt="">
-          <p class="mt-3 fs-5">Order & Connect to your shop with BORU</p>
-          <p class="fs-4 fw-semibold">Fast, Transparently and Securely  </p>
-          <p>Boru ❤️ Making Transparent & Direct Connections.</p>
-        </div>
-        <div class="col-3">
-          <ul class="links">
-            <li><a class="page-link text-capitalize" href="">about us</a></li>
-            <li><a class="page-link text-capitalize" href="">contact us</a></li>
-            <li><a class="page-link text-capitalize" href="">careers</a></li>
-            <li><a class="page-link text-capitalize" href="">boru shop</a></li>
-            <li><a class="page-link text-capitalize" href="">terms & conditions</a></li>
-          </ul>
-        </div>
-        <div class="col-3">
-          <ul class="links">
-            <li><a class="page-link text-capitalize" href="">Facbook</a></li>
-            <li><a class="page-link text-capitalize" href="">instagram</a></li>
-            <li><a class="page-link text-capitalize" href="">linkedin</a></li>
-            <li><a class="page-link text-capitalize" href="">report fraud</a></li>
-            <li><a class="page-link text-capitalize" href="">privacy policy</a></li>
-          </ul>
-        </div>
-      <div class="border-top mt-4 pt-4">
-        <p class="text-xs">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2021 © Boru™ Ltd. All rights reserved.</p>
       </div>
     </div>
-  </div>
-</div>
-</body>
-<style>
-    /*  */
-.store-img{
-  /* background-color: aqua; */
-  width: 7rem;
-  height: 7rem;
-}
-.store-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-</style>
-<!-- custom js -->
-<script src="./js/home.js"></script>
-<!--  -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-<!-- owl -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--  -->
+  </body>
+  <!--  -->
 
+  <!-- <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+    ></script> -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- owl -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- custom js -->
+  <script src="./js/home.js"></script>
 </html>

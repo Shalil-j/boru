@@ -1,21 +1,56 @@
-.main-div{
-    margin-top: 9rem;
+.store-img{
+    height: 7rem;
+    width: 7rem;
 }
-.store-logo{
-    height: 5rem;
-    width: 5rem;
-    background-color: aliceblue;
-}
-.store-logo img{
-    height: 100%;
+.store-img img{
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
-.store-div{
-    width: 20rem;
+.close-store-icon{
+    height: 2.5rem;
 }
-
+.fav-store-div{
+    width: 5.8rem;
+}
+.fav-store-div span{
+    max-width: 4.5rem;
+}
+.fav-store-img{
+    width: 5rem;
+    height: 5rem;
+    background: #ffffff;
+    padding: 3px;
+    border-radius: 50%;
+    border: 3px solid #2C7BE5;
+}
+.fav-store-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .single-store{
-    /* border: 0 !important; */
-    /* border-bottom: 1px solid rgb(205, 205, 205); */
+    border: 1px solid #dbdbdb;
+}
+.single-store-div{
+    min-height: 9rem !important;
+    width: 48%;
+}
+.store-desc{
+    border-bottom: 0;
+}
+.close-store-icon img{
+    height: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .store-desc{
+        border-bottom: 1px solid #dbdbdb;
+    }
+    
+.single-store{
+    border: 0;
+}
+.single-store-div{
+    width: 100%;
+}
 }

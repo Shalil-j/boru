@@ -54,6 +54,7 @@ $(document).ready(function() {
             }
 		},
 	});
+
    
 	$('.banner').owlCarousel({
 		loop: true,
@@ -70,8 +71,28 @@ $(document).ready(function() {
 		},
 	});
 
-// store
-
+// store list
+$('.fav-stores').owlCarousel({
+	loop: true,
+	autoplay: false,
+	autoplayTimeout: 5000,
+	autoplayHoverPause: true,
+	dots: false,
+	nav:true,
+	stagePadding: 0,
+	responsiveBaseElement: 'body',
+	responsive: {
+		0: {
+			items: 4,
+		},
+		1000:{
+			items: 5,
+		},
+		1200:{
+			items: 8,
+		}
+	},
+});
 
 
 
