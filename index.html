@@ -44,9 +44,6 @@
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <script>
-    $(".dropdown-toggle").dropdown();
-  </script>
   <body>
     <!-- navbar -->
     <nav class="navbar bg-white w-100 shadow-sm p-3">
@@ -61,7 +58,7 @@
             <a class="page-link" href="">
               <div class="d-flex align-items-center">
                 <img
-                  class="default-icon"
+                  class="sm-icon"
                   src="./asserts/icons and vectors/location.svg"
                   alt=""
                 />
@@ -92,7 +89,7 @@
         <div class="notification d-flex align-items-center">
           <div class="ms-4 position-relative">
             <img
-              class="default-icon"
+              class="sm-icon"
               src="./asserts/icons and vectors/Bell.svg"
               alt=""
             />
@@ -124,22 +121,22 @@
     <div class="main-div pb-md-5 row ">
       <!-- menu -->
       <div class="col-3 sidebar border-end  d-flex   p-0 d-none d-md-block ">
-        <div class="menu float-end  position-relative ">
-          <a class="d-flex page-link menu-item   align-items-center" href="">
+        <div class="menu float-end  position-relative menu-item-list">
+          <a class="d-flex page-link menu-item active  align-items-center" href="">
             <img src="./asserts/icons and vectors/online stores.svg" alt="" />
-            <h3 class="fs-4 ms-3 fw-light">Online Store</h3>
+            <h3 class="fs-4 ms-3 ">Online Store</h3>
           </a>
-          <a class="d-flex mt-5 page-link menu-item active  align-items-center" href="">
-            <img src="./asserts/icons and vectors/Order web gray.svg" alt="" />
-            <h3 class="fs-4 ms-3 fw-light">Orders</h3>
+          <a class="d-flex mt-5 page-link menu-item align-items-center" href="">
+            <img src="./asserts/icons and vectors/Order web.svg" alt="" />
+            <h3 class="fs-4 ms-3 ">Orders</h3>
           </a>
           <a class="d-flex mt-5 page-link menu-item  align-items-center" href="">
-            <img src="./asserts/icons and vectors/Subscription web gray.svg" alt="" />
-            <h3 class="fs-4 ms-3 fw-light">Subscription</h3>
+            <img src="./asserts/icons and vectors/Subscription web.svg" alt="" />
+            <h3 class="fs-4 ms-3 ">Subscription</h3>
           </a>
           <a class="d-flex mt-5 page-link menu-item  align-items-center" href="">
             <img src="./asserts/icons and vectors/WEb customer profile gray.svg" alt="" />
-            <h3 class="fs-4 ms-3 fw-light">Shubham</h3>
+            <h3 class="fs-4 ms-3 ">Shubham</h3>
           </a>
 
           <div class="google-playstore text-center mt-5">
@@ -178,6 +175,9 @@
               </li>
               <li>
                 <a class="dropdown-item" href="storelist.html">Storelist</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="single-product.html">single Product</a>
               </li>
             </ul>
           </div>
@@ -545,7 +545,13 @@
     <!-- menu for mobile -->
   </body>
   <!--  -->
-
+<script>
+  $(".menu-item-list").on('click', 'a', function () {
+    event.preventDefault();
+    $(".menu-item-list a.active").removeClass("active");
+    $(this).addClass("active");
+});
+</script>
   <!-- <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

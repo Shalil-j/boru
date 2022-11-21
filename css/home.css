@@ -14,6 +14,9 @@ margin-top: 8rem;
 .menu{
     width: 15rem;
 }
+.menu-item h3{
+    font-weight: 400;
+}
 .menu-item img{
     height: 3rem;
     
@@ -31,6 +34,9 @@ color: var(--blue) !important;
     width: 100%;
     object-fit: contain;
 }
+.menu-item img{
+    filter: grayscale(1);
+}
 .menu-item::after{
     content: "";
     width: 100%;
@@ -40,9 +46,14 @@ color: var(--blue) !important;
     top: 0;
     border-right: 1px solid rgb(255, 255, 255);
 }
+.menu-item.active img{
+    filter: grayscale(0);
+}
+.menu-item.active h3{
+    font-weight: 600;
+}
 .menu-item.active{
     color: var(--blue) !important;
-    font-weight: 500 !important;
 }
 .menu-item.active::after{
     border-right: 3px solid var(--blue) !important;

@@ -25,7 +25,7 @@
     />
     <!-- custom css -->
     <link rel="stylesheet" href="./css/theme.css" />
-    <link rel="stylesheet" href="./css/store.css" />
+    <link rel="stylesheet" href="./css/single-product.css" />
     <link rel="stylesheet" href="./css/navbar-footer.css" />
     <!-- owl carosul -->
     <!-- owl carousel css link -->
@@ -55,7 +55,7 @@
 <!-- navbar-->
 <!-- store -->
 <div class="container">
-<div class="row store-div py-5 border-bottom align-items-center">
+<div class="row bg-white store-div py-5 border-bottom align-items-center">
 <div class="col-12 col-lg-9">
   <div class="d-flex">
     <div class=" ">
@@ -98,110 +98,101 @@
 </div>
 </div>
 <!-- store -->
-<!-- products -->
-<div class="container pt-md-5 position-relative products-div">
-<div class="row">
-  <div class="col-3 d-none d-md-inline-block">
-    <!-- product menu for web -->
-    <ul class="list-group product-menu">
-      <li class="list-item"><a class=" page-link active" href="">All</a></li>
-      <li class="list-item"><a class=" page-link" href="">Hindi Newspaper</a></li>
-      <li class="list-item"><a class=" page-link" href="">Marathi Newspaper</a></li>
-      <li class="list-item"><a class=" page-link" href="">English NewsPaper</a></li>
-      <li class="list-item"><a class=" page-link" href="">Milk</a></li>
-      <li class="list-item"><a class=" page-link" href="">Grocery</a></li>
-      <li class="list-item"><a class=" page-link" href="">Curd</a></li>
-      <li class="list-item"><a class=" page-link" href="">Vegitable</a></li>
-      <li class="list-item"><a class=" page-link" href="">Fruit</a></li>
-      <li class="list-item"><a class=" page-link" href="">Meat</a></li>
-      <li class="list-item"><a class=" page-link" href="">Water Cane</a></li>
-      <li class="list-item"><a class=" page-link" href="">Bread</a></li>
-    </ul>
-    <!-- product menu for web -->
-  </div>
-    <!-- product menu for mobile -->
-    <div class="col-12 bg-light d-md-none">
-      <div class="product-menu-mobile ">
-        <div class="d-flex align-items-center gap-4 py-2">
-          <button class="bg-transparent text-nowrap active-mobile-menu">Mike</button>
-          <button class="bg-transparent text-nowrap">Hindi Newspaper</button>
-          <button class="bg-transparent text-nowrap">Marathi Newspaper</button>
-          <button class="bg-transparent text-nowrap">English Newspaper</button>
-          <button class="bg-transparent text-nowrap">Fruites</button>
-          <button class="bg-transparent text-nowrap">Vegitable</button>
-          <button class="bg-transparent text-nowrap">Curd</button>
+<div class="container-md mt-2 my-md-4"> 
+<div class="row justify-content-center gap-md-5">
+    <div class="col-12 col-lg-3 d-flex flex-md-column justify-content-center align-items-center bg-white py-3">
+        <div class="product-img">
+            <img src="https://www.heritagefoods.in/static/images/detailslider/mega/standardized-milk.jpg" alt="">
         </div>
-      </div>
-    </div>
-    <!-- product menu for mobile -->
-  <div class="col-12 col-md-8 px-2 px-md-5">
-    <!-- search box -->
-    <div class="input-group my-3 border rounded-3 bg-light d-md-none">
-      <input type="text" class="form-control bg-transparent border-0" placeholder="Search Product from Shubham Store, sector-14... " aria-label="Recipient's username" aria-describedby="basic-addon2">
-      <span class="input-group-text bg-transparent border-0" id="basic-addon2"><i class="bi bi-search text-secondary fs-5"></i></span>
-    </div>
-   <!--  -->
-   <div class="product p-3  border-bottom">
-    <div class="d-flex ">
-      <div class="product-img">
-        <img class="img-contain" src="https://m.media-amazon.com/images/I/71anyGuENLL._SL1000_.jpg" alt="">
-      </div>
-      <div class="product-detail w-100 ms-4 d-flex flex-column justify-content-between">
-          <div>
-            <h4>Gokul full Caw cream milk 100% Pure</h4>
-            <p class="fw-light text-xs">(500 ml)</p>
-          </div>
-          <div class="d-flex justify-content-between align-items-center w-100">
-            <div class=" fs-5">₹ 550/kg</div>
-            <div class="d-flex">
-              <div class="btn-group product-quantity" role="group" aria-label="Basic example">
+        <div class="ms-4 ms-md-0">
+        <p class="mt-3">Gokul full Caw cream milk 100% Pure</p>
+        <span class="mt-2">₹ 1100.00</span>
+        <div class="mt-3 d-flex align-content-center justify-content-between w-100">
+            <span class="fw-light text-secondary">(500 ml)</span>
+            <div class="btn-group product-quantity" role="group" aria-label="Basic example">
                 <button type="button" class=" text-center fw-bold rounded-start quantity-minus">-</button>
                 <input type="number" id="quantity" class="text-center border-0 " min="1" value="1">
                 <button type="button" class="text-center fw-bold rounded-end quantity-plus">+</button>
               </div>
-              <div class="ms-3 d-none">
-                <input type="button" name="" id="" value="+ Add" class="product-add p-1 rounded px-3">
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
+        <button class="btn btn-primary w-100 mt-5 d-none d-md-block">UPDATE</button>
     </div>
-  </div>
-  <!-- -------- -->
-  </div>
+    <!--  -->
+    <div class="col-12 col-lg-5 p-0 mt-2 mt-md-0">
+      <div class="bg-white p-3">
+        <div class="d-flex justify-content-center  gap-2 gap-md-3 align-items-center">
+            <button class="btn delivery-period active">Daily</button>
+            <button class="btn delivery-period ">Weekdays</button>
+            <button class="btn delivery-period ">Custom</button>
+            <button class="btn delivery-period ">Alternate</button>
+        </div>
+        <!--  -->
+        <div class=" my-4 d-flex justify-content-center  align-items-center gap-3 ">
+            <div class="days position-relative ">
+                <input id="sunday" name="sunday" class="day-checkbox" type="checkbox" >
+                <label for="sunday">S</label>
+            </div>
+            <div class="days position-relative ">
+                <input id="monday" name="monday" class="day-checkbox" type="checkbox" >
+                <label for="monday">M</label>
+            </div>
+            <div class="days position-relative ">
+                <input id="tuesday" name="tuesday" class="day-checkbox" type="checkbox" >
+                <label for="tuesday">T</label>
+            </div>
+            <div class="days position-relative ">
+                <input id="wednesday" name="wednesday" class="day-checkbox" type="checkbox" >
+                <label for="wednesday">W</label>
+            </div>
+            <div class="days position-relative ">
+                <input id="thursday" name="thursday" class="day-checkbox" type="checkbox" >
+                <label for="thursday">T</label>
+            </div>
+            <div class="days position-relative ">
+                <input id="friday" name="friday" class="day-checkbox" type="checkbox" >
+                <label for="friday">F</label>
+            </div>
+            <div class="days position-relative ">
+                <input id="saturday" name="saturday" class="day-checkbox" type="checkbox" >
+                <label for="saturday">S</label>
+            </div>
+        </div>
+      </div>
+<!--  -->
+<div class="">
+  <p class="text-secondary bg-white text-xs text-center mt-2"><i class="bi bi-info-circle-fill"></i> Changes in a subscription will be effected from the next day.</p>
+<div class="address d-flex gap-3 mt-2 my-md-3 bg-white p-3">
+<div>
+  <img class="md-icon" src="./asserts/icons and vectors/Home customer.svg" alt="">
+</div>
+<div>
+<p class="fs-5 fw-semibold">Home</p>
+<p>497 Evergreen Rd. Roseville, 497 Evergreen 9567
+  CA 95673 Evergreen Rd. Evergr...</p>
 </div>
 </div>
-
-
-
-<!-- product cart for web-->
-<div class="cart  border border-1  mt-5  mx-auto   py-2 px-md-5">
-  <div class="d-flex justify-content-between align-items-center">
-    <div class="text-white  d-flex align-items-center "><i class="bi bi-bag-heart-fill fs-1 me-2  px-3"></i> 
-      <div>
-     <p class="fs-5 fw-light"> 2 Producd</p>
-     <p class="d-md-none">₹<span>1565.56</span></p></div>
-    </div>
-    <div class="d-flex align-items-center me-2">
-      <p class="text-primary fw-semibold me-3 d-none d-md-block">₹ 1200/kg</p>
-      <button class="btn btn-primary btn-sm d-flex align-items-center">View Orders <span class="material-symbols-outlined text-white">
-        chevron_right
-        </span></button>
-    </div>
+<!--  -->
+<div class="border-top d-flex flex-column gap-3 p-3 bg-white">
+  <div class="d-flex gap-3 align-items-center">
+    <img class="md-icon" src="./asserts/icons and vectors/Delivery.svg" alt="">
+    <p>The delivery and service is completely provided by shop</p>
   </div>
+  <div class="d-flex gap-3 align-items-center">
+    <img class="md-icon" src="./asserts/icons and vectors/calendar record .svg" alt="">
+    <p>The delivery marking and record maintained by shop</p>
+  </div>
+  <div class="d-flex gap-3 align-items-center">
+    <img class="md-icon" src="./asserts/icons and vectors/subscription vector .svg" alt="">
+    <p>You & Shop both can manage subscription e.g. edit, pause.</p>
+  </div>
+  <button class="btn btn-primary my-4 py-3 d-md-none">UPDATE</button>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
+    </div>
+</div>
+</div>
+<!-- products -->
 
 <!-- footer -->
 <div class="footer">
@@ -223,32 +214,8 @@
 </div>
   
   </body>
-  <!-- custom js -->
-  <script src="./js/home.js"></script>
-  <!--  -->
-  <script>
-        // ---------
-        $(".product-menu-links").on('click', 'a', function () {
-    event.preventDefault();
-    $(".product-menu-links li a.active").removeClass("active");
-    $(this).addClass("active");
-});
-
-    	var quantitiy=1;
-	   $('.quantity-plus').click(function(e){
-			e.preventDefault();
-			var quantity = parseInt($('#quantity').val());
-				$('#quantity').val(quantity + 1);
-		});
-		 $('.quantity-minus').click(function(e){
-			e.preventDefault();
-			var quantity = parseInt($('#quantity').val());
-				if(quantity>0){
-				$('#quantity').val(quantity - 1);
-				}
-       
-		});
-  </script>
+<script>
+</script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

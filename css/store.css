@@ -8,10 +8,15 @@
     /* background-color: aqua; */
 }
 /* ----- */
+.product-div{
+    overflow: auto;
+}
 .product-menu{
+    /* position: -webkit-sticky; */
     line-height: 3rem;
-    position: sticky;
+    position: sticky ;
     top: 7rem;
+    /* overflow: visible; */
 }
 .product-menu li a{
     font-weight: 300;
@@ -34,9 +39,29 @@
 .active::after{
     border-right: 3px solid #2699FB !important;
 }
+/* product menu mobile */
+.product-menu-mobile{
+    overflow: hidden;
+}
+.product-menu-mobile div{
+    overflow-x: auto;
+}
+.product-menu-mobile div::-webkit-scrollbar{
+display: none;;
+}
+.product-menu-mobile button{
+    font-size: 1.2rem;
+    border: none;
+}
+.active-mobile-menu{
+    border-bottom: 3px solid #0D6EFD !important;
+    color: #0D6EFD;
+    font-weight: 600;
+}
 /* product */
 .product{
     /* background: rgb(245, 245, 245); */
+    width: 100%;
 }
 .product-img{
     height: 7rem;
@@ -65,6 +90,61 @@
 /* .products-div{
     margin-bottom: 15rem;
 } */
+.cart{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.cart span,.cart p,.cart i{
+    color: #2699FB;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .store-img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .cart{
+        bottom: 1rem;
+        width: 95%;
+        border-radius: 0.5rem;
+        background: #0D6EFD;
+        padding: 0;
+    }
+    .cart span,.cart p,.cart i{
+        color: #ffffff;
+    }
+    .cart p:nth-child(1){
+        font-size: small !important;
+    }
+    .cart i:nth-child(1){
+        border-right: 1px solid whitesmoke;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
 
 
 
