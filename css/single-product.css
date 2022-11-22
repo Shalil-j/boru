@@ -72,8 +72,8 @@
 .day-checkbox:checked{
     background: rgb(214, 239, 255);
     /* border: 1px solid #4fa7ff; */
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
 }
 .day-checkbox:checked + label{

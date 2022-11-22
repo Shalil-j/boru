@@ -48,7 +48,7 @@ h2,h3,h4,h5,h5,span,strong,p{
     height: 3.5rem;
 }
 input:focus{
-    border: 0;
+    /* border: 0; */
     outline: none;
 }
 .lh-xs{
@@ -66,15 +66,20 @@ input:focus{
   object-fit: contain;
 }
 .sm-icon{
-  height: 1.8rem;
+  height: 1.5rem;
 }
 .md-icon{
   height: 2.5rem;
 }
 .lg-icon{
-  height: 5rem;
+  height: 4rem;
+  width: 4rem;
+  object-fit: contain;
 }
+.xl-icon{
+  height: 6rem;
 
+}
 .input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none !important;
